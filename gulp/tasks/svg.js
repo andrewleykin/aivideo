@@ -22,6 +22,6 @@ module.exports = function() {
                     }
                 }
             }))
-            .pipe($.gulp.dest('./build/static/img/svg/'));
+            .pipe($.gulp.dest('./build/app/img/svg/'));
     });
 };
