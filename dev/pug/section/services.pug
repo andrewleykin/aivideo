@@ -1,0 +1,11 @@
+section.services#services
+  .container
+    .services__wrap
+      each service in content.services
+        .services__item
+          .services__icon
+            +icon(service["icon"])
+          h3.services__name= service["nameStart"]
+            span= service["nameEnd"]
+          p.services__text= service["text"]
+          button.btn.btn--white.services__btn(type="button")= content.general.btn.text

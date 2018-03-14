@@ -21,9 +21,15 @@ html(lang="ru-RU")
 		<![endif]-->
 		body
 			.wrapper
+				// Шапка
 				include ../section/header
+				// Конец шапки
+				// Контент
 				block content
+				// Конец контента
+				// Подвал
 				include ../section/footer
+				// Конец подвала
 			script(src="app/js/libs.min.js")
 			script(src="app/js/app.js")
 			block script

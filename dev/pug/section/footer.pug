@@ -1,0 +1,11 @@
+footer.footer
+  .footer__map.map#map
+    script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A38884f8170f36ec3df3e3e26b562b5dfcd366b533df5e23229b76b8f293e7745&width=100%25&height=662&lang=ru_RU&scroll=false')
+  .container
+    .footer__info
+      .footer__phone
+        include ../modules/phone
+      .footer__address
+        each address in content.general.address.el
+          span.footer__el= address["text"]
+

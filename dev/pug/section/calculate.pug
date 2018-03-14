@@ -1,0 +1,39 @@
+section.calculate#calculate
+  .container
+    .calculate__wrap
+      .calculate__header
+        h2.calculate__title= content.calculate.title
+        .calculate__icons
+          each item in content.calculate.icons
+            .calculate__icon
+              .calculate__icon-img
+                +icon(item["icon"])
+              span.calculate__icon-name= item["text"]
+      .calculate__content
+        .calculate__menu
+          ul.calculate__menu-list
+            each menu in content.calculate.menu
+              li.calculate__menu-item= menu["text"]
+        .calculate__list
+          each list in content.calculate.list
+            .calculate__item
+              button.btn.btn--small.calculate__item-btn(type="button")
+                span= content.calculate.btn.remove
+              each textItem in list["textList"]
+                span.calculate__text= textItem["text"]
+      .calculate__footer
+        .calculate__group
+          input.calculate__input(type=content.calculate.form.input.type, id=content.calculate.form.input.id, name=content.calculate.form.input.name)
+          label.calculate__label(for=content.calculate.form.label.id)= content.calculate.form.label.text
+        .calculate__meter
+          span.calculate__meter-text= content.calculate.meter.text
+          span.calculate__meter-num= content.calculate.meter.num
+        .calculate__more
+          span.calculate__more-title= content.calculate.more.title
+          ul.calculate__more-list
+            each more in content.calculate.more.list
+              li.calculate__more-item= more["text"]
+        .calculate__total
+          span.calculate__total-text= content.calculate.total
+          span.calculate__total-num
+        button.btn.btn--red.calculate__btn(type="button")= content.general.btn.text

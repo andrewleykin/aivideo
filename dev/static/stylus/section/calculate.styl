@@ -1,0 +1,169 @@
+.calculate
+  background default-color
+  padding-top 35px
+  padding-bottom 45px
+  color white
+  .container
+    max-width 1186px
+
+.calculate__header
+  display flex
+  justify-content space-between
+  padding 0 54px
+  margin-bottom 15px
+
+.calculate__title
+  font-size 30px
+  line-height 30px
+  font-weight 600
+  max-width 170px
+
+.calculate__icons
+  padding-top 15px
+  display flex
+
+.calculate__icon
+  width 100%
+  max-width 180px
+  text-align center
+  &+&
+    margin-left 10px
+
+.calculate__icon-img
+  margin-bottom 15px
+  .icon
+    size(55px)
+
+.calculate__icon-name
+  font-size 15px  
+  line-height 18px
+  font-weight 600
+
+.calculate__content
+  display flex
+  justify-content space-between
+  padding 0 35px 30px
+  position relative
+  z-index 1
+  margin-bottom 15px
+  &:before,&:after
+    content ""
+    display block
+    position absolute
+    left 0
+    height 5px
+    width calc(100% - 70px)
+    margin 0 35px
+    background accent-color
+    z-index -1
+  &:before
+    top 13px
+  &:after
+    bottom 0
+
+.calculate__menu
+  max-width 230px
+  width 100%
+  padding-top 45px
+
+.calculate__menu-item
+  display inline-block
+  padding 20px 20px 15px
+  border-radius 5px
+  font-weight 600
+  @extend .trs
+  cursor pointer
+  &+&
+    margin-top 5px
+  &:hover
+    background accent-color
+  &.active
+    background accent-color
+
+.calculate__list
+  display flex
+  margin-right 20px
+
+.calculate__item
+  max-width 195px
+  width 100%
+  &.disabled
+    .calculate__text
+      color text-disabled-color
+
+.calculate__item-btn
+  margin-bottom 25px
+
+.calculate__text
+  display block
+  font-size 13px
+  line-height 15px
+  &+&
+    margin-top 18px
+
+.calculate__footer
+  padding 0 54px
+  display flex
+
+.calculate__group
+  max-width 175px
+  margin-right 10px
+  text-align center
+
+.calculate__input
+  max-width 100%
+  background transparent
+  color white
+  font-size 30px
+  border-bottom 4px solid accent-color
+  padding-bottom 5px
+  font-family base-font
+  padding-left 5px
+  text-align center
+
+.calculate__label
+  margin 5px auto 0
+  display block
+  font-size 13px
+  max-width 80%
+  text-align center
+  &.hide
+    opacity 1
+
+.calculate__meter
+  align-self: center
+  display flex
+  margin-right 90px
+  margin-top -30px
+
+.calculate__meter-text
+  font-size 30px
+  font-weight 600
+
+.calculate__meter-num
+  font-size 15px
+  font-weight 600
+  display block
+  margin-top -5px
+
+.calculate__more
+  margin-right 45px
+
+.calculate__more-title
+  font-weight 600
+  margin-bottom 10px
+  display block
+
+.calculate__more-item
+  font-size 13px
+
+.calculate__total
+  margin-right: auto
+  font-size 30px
+  line-height 30px
+  font-weight 600
+
+.calculate__btn
+  margin-top 10px
+  &.btn
+    size(195px,50px)

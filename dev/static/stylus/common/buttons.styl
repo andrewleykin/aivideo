@@ -1,0 +1,29 @@
+.btn
+  display block
+  size(335px, 50px)
+  background accent-color
+  color white
+  font-size 20px
+  font-weight 600
+  font-family base-font
+  cursor pointer
+  border-radius 5px
+  @extend .trs
+  &:hover
+    background darken(accent-color, 20%)
+
+.btn--white
+  background white
+  color accent-color
+  &:hover
+    background white
+    color darken(accent-color, 20%)
+
+.btn--small
+  size(173px,30px)
+  font-size 15px
+
+.btn--red
+  background red-color
+  &:hover
+    background darken(red-color,20%)

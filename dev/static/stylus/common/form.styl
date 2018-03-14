@@ -1,0 +1,23 @@
+// .form
+// 	.invalid
+// 		input,
+// 		textarea
+// 			border-color red-color
+// 	.valid
+// 		input,
+// 		textarea
+// 			border-color blue-color
+
+.group
+  position relative
+
+.input
+  &:focus
+    &+.label
+      opacity 0
+
+.label
+  position absolute
+  @extend .trs
+	&.hide
+		opacity 0

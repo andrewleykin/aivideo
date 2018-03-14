@@ -1,0 +1,10 @@
+section.advantage
+  .container
+    .advantage__wrap
+      each advantage in content.advantage
+        .advantage__item
+          .advantage__icon
+            +icon(advantage["icon"])
+          h3.advantage__name= advantage["nameStart"]
+            span= advantage["nameEnd"]
+          p.advantage__text= advantage["text"]

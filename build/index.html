@@ -11,9 +11,527 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
     <body>
       <div class="wrapper">
+        <!-- Шапка-->
+        <header class="header">
+          <div class="container">
+            <div class="header__wrap">
+              <div class="header__logo">
+                <div class="logo"><a class="logo__link" href="#top-banner">
+                    <svg class="icon icon-logo ">
+                      <use xlink:href="app/img/svg/symbol/sprite.svg#logo"></use>
+                    </svg></a></div>
+              </div>
+              <div class="header__menu">
+                <nav class="menu">
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#services">Услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#restaurant">Ресторан</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#office">Офис</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#storage">Склад</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#home">Дом</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#calculate">Стоимость</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header__phone">
+                <div class="phone"><a class="phone__link" href="tel:+74956642699">+7 (495) <span>664-26-99</span></a></div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Конец шапки-->
+        <!-- Контент-->
+        <!-- Секция Top-banner-->
+        <section class="top-banner" id="top-banner">
+          <div class="container">
+            <div class="top-banner__wrap">
+              <p class="top-banner__text">Системы безопасности для ресторанов, офисов, складских помещений и загородных домов</p>
+              <div class="top-banner__info">
+                <p class="top-banner__title">Закажите звонок<span class="top-banner__subtitle">для бесплатной разработки проекта</span></p>
+                <form class="top-banner__form form" data-validation>
+                  <div class="top-banner__group group">
+                    <input class="top-banner__input input" type="text" name="phone" id="phone">
+                    <label class="top-banner__label label" for="phone">+7(---) --- -- --</label>
+                  </div><span class="top-banner__subform">Мы перезвоним в самое ближайшее время</span>
+                  <button class="btn top-banner__btn" type="submit">Заказать</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Конец секции Top-banner-->
+        <!-- Секция Services-->
+        <section class="services" id="services">
+          <div class="container">
+            <div class="services__wrap">
+              <div class="services__item">
+                <div class="services__icon">
+                  <svg class="icon icon-services1 ">
+                    <use xlink:href="app/img/svg/symbol/sprite.svg#services1"></use>
+                  </svg>
+                </div>
+                <h3 class="services__name">Cистемы<span>видеонаблюдения</span></h3>
+                <p class="services__text">Используя наработанные связи и партнерские программы, наша компания готова предложить Вам лучшие цены на оборудование технической безопасности</p>
+                <button class="btn btn--white services__btn" type="button">Заказать</button>
+              </div>
+              <div class="services__item">
+                <div class="services__icon">
+                  <svg class="icon icon-services2 ">
+                    <use xlink:href="app/img/svg/symbol/sprite.svg#services2"></use>
+                  </svg>
+                </div>
+                <h3 class="services__name">Охранно-пожарная <span>сигнализация</span></h3>
+                <p class="services__text">Мы обладаем огромным опытом создания и поддержки систем пожарной безопасности и все необходимые средства для предоставления полного спектра услуг в данной области.</p>
+                <button class="btn btn--white services__btn" type="button">Заказать</button>
+              </div>
+              <div class="services__item">
+                <div class="services__icon">
+                  <svg class="icon icon-services3 ">
+                    <use xlink:href="app/img/svg/symbol/sprite.svg#services3"></use>
+                  </svg>
+                </div>
+                <h3 class="services__name">Системы контроля<span>и управления доступом</span></h3>
+                <p class="services__text">Мы создаём только надёжные передовые системы контроля и управления доступом - это подтверждает многолетняя практика и положительные отзывы.</p>
+                <button class="btn btn--white services__btn" type="button">Заказать</button>
+              </div>
+              <div class="services__item">
+                <div class="services__icon">
+                  <svg class="icon icon-services4 ">
+                    <use xlink:href="app/img/svg/symbol/sprite.svg#services4"></use>
+                  </svg>
+                </div>
+                <h3 class="services__name">Установка приточно<span>вытяжной вентиляции</span></h3>
+                <p class="services__text">Разработка технической документации и подготовка спецификации. После инсталляции системы безопасности, специалисты компании Аи-Видео обучат персонал навыкам работы с системой.</p>
+                <button class="btn btn--white services__btn" type="button">Заказать</button>
+              </div>
+              <div class="services__item">
+                <div class="services__icon">
+                  <svg class="icon icon-services5 ">
+                    <use xlink:href="app/img/svg/symbol/sprite.svg#services5"></use>
+                  </svg>
+                </div>
+                <h3 class="services__name">Система<span>охраны периметра</span></h3>
+                <p class="services__text">Разработка технической документации и подготовка спецификации. После инсталляции системы безопасности, специалисты компании Аи-Видео обучат персонал навыкам работы с системой.</p>
+                <button class="btn btn--white services__btn" type="button">Заказать</button>
+              </div>
+              <div class="services__item">
+                <div class="services__icon">
+                  <svg class="icon icon-services6 ">
+                    <use xlink:href="app/img/svg/symbol/sprite.svg#services6"></use>
+                  </svg>
+                </div>
+                <h3 class="services__name">Система<span>платной парковки</span></h3>
+                <p class="services__text">Разработка технической документации и подготовка спецификации. После инсталляции системы безопасности, специалисты компании Аи-Видео обучат персонал навыкам работы с системой.</p>
+                <button class="btn btn--white services__btn" type="button">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Конец секции Services-->
+        <!-- Секция Advantage-->
+        <section class="advantage">
+          <div class="container">
+            <div class="advantage__wrap">
+              <div class="advantage__item">
+                <div class="advantage__icon">
+                  <svg class="icon icon-advantage1 ">
+                    <use xlink:href="app/img/svg/symbol/sprite.svg#advantage1"></use>
+                  </svg>
+                </div>
+                <h3 class="advantage__name">Большой<span>опыт работ</span></h3>
+                <p class="advantage__text">Благодаря участию компании в крупнейших проектах, включая мониторинг строительства объектов федерального значения, а также создание Системы обеспечения безопасности города (СОБГ, г.Москва), мы накопили огромный опыт в области создания территориально-распределенных систем.</p>
+              </div>
+              <div class="advantage__item">
+                <div class="advantage__icon">
+                  <svg class="icon icon-advantage2 ">
+                    <use xlink:href="app/img/svg/symbol/sprite.svg#advantage2"></use>
+                  </svg>
+                </div>
+                <h3 class="advantage__name">Полное соблюдение<span>технического задания</span></h3>
+                <p class="advantage__text">Мы одни из лидеров рынка технических систем безопасности, обладающий всеми необходимыми ресурсами для осуществления задач любой сложности. Главное преимущество компании состоит в возможности предоставления клиентам целого комплекса разнообразных технологий, методов и инструментов для реализации проектов, направленных на обеспечение безопасности жизнедеятельности.</p>
+              </div>
+              <div class="advantage__item">
+                <div class="advantage__icon">
+                  <svg class="icon icon-advantage3 ">
+                    <use xlink:href="app/img/svg/symbol/sprite.svg#advantage3"></use>
+                  </svg>
+                </div>
+                <h3 class="advantage__name">Высокий<span>профессионализм</span></h3>
+                <p class="advantage__text">Имея в арсенале большой опыт и доскональное знание рынка, мы предлагаем нашим заказчикам высококвалифицированные услуги по проектированию, монтажу, ремонту и обслуживанию любых систем технической безопасности, а также пожарному аудиту и оценке пожарных рисков.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Конец секции Advantage-->
+        <!-- Секция Top-form-->
+        <section class="top-form">
+          <div class="container">
+            <div class="top-form__wrap">
+              <div class="top-form__info">
+                <h3 class="top-form__title">Оставьте заявку</h3><span class="top-form__subtitle">Бесплатный выезд оценщика</span>
+              </div>
+              <form class="top-form__form form" data-validation>
+                <div class="top-form__list">
+                  <div class="top-form__group group">
+                    <input class="top-form__input input" type="text" id="phone2" name="phone">
+                    <label class="top-form__label label" for="phone2">+7(---) --- -- --</label><span class="top-form__sublabel">Ваш телефон</span>
+                  </div>
+                  <div class="top-form__group group">
+                    <input class="top-form__input input" type="text" id="name" name="name">
+                    <label class="top-form__label label" for="name"></label><span class="top-form__sublabel">Ваше имя</span>
+                  </div>
+                </div>
+                <button class="btn top-form__btn" type="submit">Заказать</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Конец секции Top-form-->
+        <!-- Секция Product-->
+        <section class="product">
+          <div class="container">
+            <div class="product__wrap">
+              <div class="product__item" id="restaurant">
+                <div class="product__head">
+                  <div class="product__icons">
+                    <div class="product__icon">
+                      <svg class="icon icon-product1 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product1"></use>
+                      </svg>
+                    </div>
+                    <div class="product__icon">
+                      <svg class="icon icon-product2 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product2"></use>
+                      </svg>
+                    </div>
+                    <div class="product__icon">
+                      <svg class="icon icon-product3 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product3"></use>
+                      </svg>
+                    </div>
+                    <div class="product__icon">
+                      <svg class="icon icon-product4 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product4"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 class="product__title">Проектирование и установка инженерных систем</h3>
+                </div>
+                <div class="product__block">
+                  <div class="product__slider">
+                    <div class="product__el">
+                      <div class="product__img"><img src="app/img/content/product/restaraunt/1.jpg" alt="restaraunt 1">
+                        <div class="product__controls">
+                          <div class="product__control product__control--prev"></div>
+                          <div class="product__control product__control--next"></div>
+                        </div>
+                      </div>
+                      <div class="product__descr">
+                        <h4 class="product__subname">Ресторан «Лебеди».</h4>
+                        <p class="product__subtext">Комплексное проектирование и установка инженерных систем ( ОПС, СКУД, Видеонаблюдение). Короткие сроки выполнения работ. Согласование всей проектной документаци.</p>
+                      </div>
+                    </div>
+                    <div class="product__el">
+                      <div class="product__img"><img src="app/img/content/product/restaraunt/2.jpg" alt="restaraunt 2">
+                        <div class="product__controls">
+                          <div class="product__control product__control--prev"></div>
+                          <div class="product__control product__control--next"></div>
+                        </div>
+                      </div>
+                      <div class="product__descr">
+                        <h4 class="product__subname">2 Ресторан «Лебеди».</h4>
+                        <p class="product__subtext">2 Комплексное проектирование и установка инженерных систем ( ОПС, СКУД, Видеонаблюдение). Короткие сроки выполнения работ. Согласование всей проектной документаци.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <h2 class="product__name">Рестораны, кафе, столовые</h2>
+                    <p class="product__text">Мы одни из лидеров рынка технических систем безопасности, обладающий всеми необходимыми ресурсами для осуществления задач любой сложности. Главное преимущество компании состоит в возможности предоставления клиентам целого комплекса разнообразных технологий, методов и инструментов для реализации проектов, направленных на обеспечение безопасности жизнедеятельности.</p>
+                    <button class="btn product__btn js-scroll" type="button" href="#calculate">Расчитать стоимость</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item" id="office">
+                <div class="product__head">
+                  <div class="product__icons">
+                    <div class="product__icon">
+                      <svg class="icon icon-product1 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product1"></use>
+                      </svg>
+                    </div>
+                    <div class="product__icon">
+                      <svg class="icon icon-product2 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product2"></use>
+                      </svg>
+                    </div>
+                    <div class="product__icon">
+                      <svg class="icon icon-product3 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product3"></use>
+                      </svg>
+                    </div>
+                    <div class="product__icon">
+                      <svg class="icon icon-product4 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product4"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 class="product__title">Разработка индивидуальных решений</h3>
+                </div>
+                <div class="product__block">
+                  <div class="product__slider">
+                    <div class="product__el">
+                      <div class="product__img"><img src="app/img/content/product/office/1.jpg" alt="office 1">
+                        <div class="product__controls">
+                          <div class="product__control product__control--prev"></div>
+                          <div class="product__control product__control--next"></div>
+                        </div>
+                      </div>
+                      <div class="product__descr">
+                        <h4 class="product__subname">Оффис «Лебеди».</h4>
+                        <p class="product__subtext">Комплексное проектирование и установка инженерных систем ( ОПС, СКУД, Видеонаблюдение). Короткие сроки выполнения работ. Согласование всей проектной документаци.</p>
+                      </div>
+                    </div>
+                    <div class="product__el">
+                      <div class="product__img"><img src="app/img/content/product/office/2.jpg" alt="office 2">
+                        <div class="product__controls">
+                          <div class="product__control product__control--prev"></div>
+                          <div class="product__control product__control--next"></div>
+                        </div>
+                      </div>
+                      <div class="product__descr">
+                        <h4 class="product__subname">2 Оффис «Лебеди».</h4>
+                        <p class="product__subtext">2 Комплексное проектирование и установка инженерных систем ( ОПС, СКУД, Видеонаблюдение). Короткие сроки выполнения работ. Согласование всей проектной документаци.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <h2 class="product__name">Бизнес-центры офисы</h2>
+                    <p class="product__text">Мы одни из лидеров рынка технических систем безопасности, обладающий всеми необходимыми ресурсами для осуществления задач любой сложности. Главное преимущество компании состоит в возможности предоставления клиентам целого комплекса разнообразных технологий, методов и инструментов для реализации проектов, направленных на обеспечение безопасности жизнедеятельности.</p>
+                    <button class="btn product__btn js-scroll" type="button" href="#calculate">Расчитать стоимость</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item" id="storage">
+                <div class="product__head">
+                  <div class="product__icons">
+                    <div class="product__icon">
+                      <svg class="icon icon-product1 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product1"></use>
+                      </svg>
+                    </div>
+                    <div class="product__icon">
+                      <svg class="icon icon-product2 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product2"></use>
+                      </svg>
+                    </div>
+                    <div class="product__icon">
+                      <svg class="icon icon-product3 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product3"></use>
+                      </svg>
+                    </div>
+                    <div class="product__icon">
+                      <svg class="icon icon-product4 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product4"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 class="product__title">Срочный монтаж инженерных систем</h3>
+                </div>
+                <div class="product__block">
+                  <div class="product__slider">
+                    <div class="product__el">
+                      <div class="product__img"><img src="app/img/content/product/storage/1.jpg" alt="storage 1">
+                        <div class="product__controls">
+                          <div class="product__control product__control--prev"></div>
+                          <div class="product__control product__control--next"></div>
+                        </div>
+                      </div>
+                      <div class="product__descr">
+                        <h4 class="product__subname">Склад «Лебеди».</h4>
+                        <p class="product__subtext">Комплексное проектирование и установка инженерных систем ( ОПС, СКУД, Видеонаблюдение). Короткие сроки выполнения работ. Согласование всей проектной документаци.</p>
+                      </div>
+                    </div>
+                    <div class="product__el">
+                      <div class="product__img"><img src="app/img/content/product/storage/2.jpg" alt="storage 2">
+                        <div class="product__controls">
+                          <div class="product__control product__control--prev"></div>
+                          <div class="product__control product__control--next"></div>
+                        </div>
+                      </div>
+                      <div class="product__descr">
+                        <h4 class="product__subname">2 Склад «Лебеди».</h4>
+                        <p class="product__subtext">2 Комплексное проектирование и установка инженерных систем ( ОПС, СКУД, Видеонаблюдение). Короткие сроки выполнения работ. Согласование всей проектной документаци.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <h2 class="product__name">Складские помещения</h2>
+                    <p class="product__text">Мы одни из лидеров рынка технических систем безопасности, обладающий всеми необходимыми ресурсами для осуществления задач любой сложности. Главное преимущество компании состоит в возможности предоставления клиентам целого комплекса разнообразных технологий, методов и инструментов для реализации проектов, направленных на обеспечение безопасности жизнедеятельности.</p>
+                    <button class="btn product__btn js-scroll" type="button" href="#calculate">Расчитать стоимость</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item" id="home">
+                <div class="product__head">
+                  <div class="product__icons">
+                    <div class="product__icon">
+                      <svg class="icon icon-product1 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product1"></use>
+                      </svg>
+                    </div>
+                    <div class="product__icon">
+                      <svg class="icon icon-product2 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product2"></use>
+                      </svg>
+                    </div>
+                    <div class="product__icon">
+                      <svg class="icon icon-product4 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#product4"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 class="product__title">Гарантийное обслуживание систем</h3>
+                </div>
+                <div class="product__block">
+                  <div class="product__slider">
+                    <div class="product__el">
+                      <div class="product__img"><img src="app/img/content/product/home/1.jpg" alt="home 1">
+                        <div class="product__controls">
+                          <div class="product__control product__control--prev"></div>
+                          <div class="product__control product__control--next"></div>
+                        </div>
+                      </div>
+                      <div class="product__descr">
+                        <h4 class="product__subname">Дом «Лебеди».</h4>
+                        <p class="product__subtext">Комплексное проектирование и установка инженерных систем ( ОПС, СКУД, Видеонаблюдение). Короткие сроки выполнения работ. Согласование всей проектной документаци.</p>
+                      </div>
+                    </div>
+                    <div class="product__el">
+                      <div class="product__img"><img src="app/img/content/product/home/2.jpg" alt="home 2">
+                        <div class="product__controls">
+                          <div class="product__control product__control--prev"></div>
+                          <div class="product__control product__control--next"></div>
+                        </div>
+                      </div>
+                      <div class="product__descr">
+                        <h4 class="product__subname">2 Дом «Лебеди».</h4>
+                        <p class="product__subtext">2 Комплексное проектирование и установка инженерных систем ( ОПС, СКУД, Видеонаблюдение). Короткие сроки выполнения работ. Согласование всей проектной документаци.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <h2 class="product__name">Загородные дома коттеджи, поселки</h2>
+                    <p class="product__text">Мы одни из лидеров рынка технических систем безопасности, обладающий всеми необходимыми ресурсами для осуществления задач любой сложности. Главное преимущество компании состоит в возможности предоставления клиентам целого комплекса разнообразных технологий, методов и инструментов для реализации проектов, направленных на обеспечение безопасности жизнедеятельности.</p>
+                    <button class="btn product__btn js-scroll" type="button" href="#calculate">Расчитать стоимость</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Конец секции Product-->
+        <!-- Секция Calculate-->
+        <section class="calculate" id="calculate">
+          <div class="container">
+            <div class="calculate__wrap">
+              <div class="calculate__header">
+                <h2 class="calculate__title">Расчитать стоимость проекта</h2>
+                <div class="calculate__icons">
+                  <div class="calculate__icon">
+                    <div class="calculate__icon-img">
+                      <svg class="icon icon-calculate1 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#calculate1"></use>
+                      </svg>
+                    </div><span class="calculate__icon-name">Система видеонаблюдения</span>
+                  </div>
+                  <div class="calculate__icon">
+                    <div class="calculate__icon-img">
+                      <svg class="icon icon-calculate2 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#calculate2"></use>
+                      </svg>
+                    </div><span class="calculate__icon-name">Охранно пожарная сигнализация</span>
+                  </div>
+                  <div class="calculate__icon">
+                    <div class="calculate__icon-img">
+                      <svg class="icon icon-calculate3 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#calculate3"></use>
+                      </svg>
+                    </div><span class="calculate__icon-name">Контроль доступа СКУД</span>
+                  </div>
+                  <div class="calculate__icon">
+                    <div class="calculate__icon-img">
+                      <svg class="icon icon-calculate4 ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#calculate4"></use>
+                      </svg>
+                    </div><span class="calculate__icon-name">Система охраны периметра</span>
+                  </div>
+                </div>
+              </div>
+              <div class="calculate__content">
+                <div class="calculate__menu">
+                  <ul class="calculate__menu-list">
+                    <li class="calculate__menu-item">Офис</li>
+                    <li class="calculate__menu-item">Складское помещение</li>
+                    <li class="calculate__menu-item">Ресторан / Кафе</li>
+                    <li class="calculate__menu-item">Загородный дом</li>
+                  </ul>
+                </div>
+                <div class="calculate__list">
+                  <div class="calculate__item">
+                    <button class="btn btn--small calculate__item-btn" type="button"><span>отключить</span></button><span class="calculate__text">Видеокамеры</span><span class="calculate__text">Видеорегистраторы</span><span class="calculate__text">Мониторы</span><span class="calculate__text">Программное обеспечение</span>
+                  </div>
+                  <div class="calculate__item">
+                    <button class="btn btn--small calculate__item-btn" type="button"><span>отключить</span></button><span class="calculate__text">Охранные и Пожарные извещатели</span><span class="calculate__text">Световой, звуковой или комбинированный оповещатели</span><span class="calculate__text">Программное обеспечение</span><span class="calculate__text">Оборудование централизованного управления</span><span class="calculate__text">Приемно-контрольный прибор</span>
+                  </div>
+                  <div class="calculate__item">
+                    <button class="btn btn--small calculate__item-btn" type="button"><span>отключить</span></button><span class="calculate__text">Серверные контроллеры</span><span class="calculate__text">Считыватели</span><span class="calculate__text">Идентификаторы</span>
+                  </div>
+                  <div class="calculate__item">
+                    <button class="btn btn--small calculate__item-btn" type="button"><span>отключить</span></button><span class="calculate__text">Извещатели</span><span class="calculate__text">Приемно-контрольный приборы</span><span class="calculate__text">Исполнительные механизмы (сирены, реле управления устройствами смежных систем)</span><span class="calculate__text">Программное обеспечение</span>
+                  </div>
+                </div>
+              </div>
+              <div class="calculate__footer">
+                <div class="calculate__group">
+                  <input class="calculate__input" type="text" id="meter" name="meter">
+                  <label class="calculate__label">приблизительный метраж</label>
+                </div>
+                <div class="calculate__meter"><span class="calculate__meter-text">м</span><span class="calculate__meter-num">2</span></div>
+                <div class="calculate__more"><span class="calculate__more-title">Скорее всего понадобятся еще:</span>
+                  <ul class="calculate__more-list">
+                    <li class="calculate__more-item">Блоки питания</li>
+                    <li class="calculate__more-item">Источники бесперебойного питания</li>
+                    <li class="calculate__more-item">Коммуникации (кабели, розетки, etc.)</li>
+                    <li class="calculate__more-item">Расходные материалы</li>
+                  </ul>
+                </div>
+                <div class="calculate__total"><span class="calculate__total-text">Итого:</span><span class="calculate__total-num"></span></div>
+                <button class="btn btn--red calculate__btn" type="button">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Конец секции Calculate-->
+        <!-- Конец контента-->
+        <!-- Подвал-->
+        <footer class="footer">
+          <div class="footer__map map" id="map">
+            <script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A38884f8170f36ec3df3e3e26b562b5dfcd366b533df5e23229b76b8f293e7745&amp;width=100%25&amp;height=662&amp;lang=ru_RU&amp;scroll=false"></script>
+          </div>
+          <div class="container">
+            <div class="footer__info">
+              <div class="footer__phone">
+                <div class="phone"><a class="phone__link" href="tel:+74956642699">+7 (495) <span>664-26-99</span></a></div>
+              </div>
+              <div class="footer__address"><span class="footer__el">123610, МОСКВА,</span><span class="footer__el">ПРЕСНЕНСКАЯ НАБ. Д.12 </span><span class="footer__el">ММДЦ «МОСКВА-СИТИ»,</span><span class="footer__el">БЦ «БАШНЯ ФЕДЕРАЦИИ»</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Конец подвала-->
       </div>
       <script src="app/js/libs.min.js"></script>
-      <script src="app/js/main.js"></script>
+      <script src="app/js/app.js"></script>
     </body>
   </head>
 </html>

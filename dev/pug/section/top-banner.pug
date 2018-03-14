@@ -1,0 +1,13 @@
+section.top-banner#top-banner
+  .container
+    .top-banner__wrap
+      p.top-banner__text= content.topBanner.text
+      .top-banner__info
+        p.top-banner__title= content.topBanner.title
+          span.top-banner__subtitle= content.topBanner.subtitle
+        form.top-banner__form.form(data-validation)
+          .top-banner__group.group
+            input.top-banner__input.input(type=content.topBanner.form.input.type name=content.topBanner.form.input.name id=content.topBanner.form.input.id)
+            label.top-banner__label.label(for=content.topBanner.form.label.for)= content.topBanner.form.label.text
+          span.top-banner__subform= content.topBanner.subform
+          button.btn.top-banner__btn(type="submit")= content.general.btn.text

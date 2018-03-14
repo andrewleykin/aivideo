@@ -1,7 +1,28 @@
 {
-  "navPages": {
-    "Главная страница" : "main.html",
-    "О компании" : "about.html",
-    "Каталог" : "catalog.html"
-  }
+  "topMenu": [
+    {
+      "link": "#services",
+      "text": "Услуги"
+    },
+    {
+      "link": "#restaurant",
+      "text": "Ресторан"
+    },
+    {
+      "link": "#office",
+      "text": "Офис"
+    },
+    {
+      "link": "#storage",
+      "text": "Склад"
+    },
+    {
+      "link": "#home",
+      "text": "Дом"
+    },
+    {
+      "link": "#calculate",
+      "text": "Стоимость"
+    }
+  ]
 }

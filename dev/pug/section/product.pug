@@ -1,0 +1,27 @@
+section.product
+  .container
+    .product__wrap
+      each product in content.product.list
+        .product__item(id=product["id"])
+          .product__head
+            .product__icons
+              each img in product["icons"]
+                .product__icon
+                  +icon(img["icon"])
+            h3.product__title= product["title"]
+          .product__block
+            .product__slider
+              each slider in product["slider"]
+                .product__el
+                  .product__img
+                    img(src='app/img/content/'+slider["imgSrc"], alt=slider["imgAlt"])
+                    .product__controls
+                      .product__control.product__control--prev
+                      .product__control.product__control--next
+                  .product__descr
+                    h4.product__subname= slider["name"]
+                    p.product__subtext= slider["text"]
+            .product__info
+              h2.product__name= product["name"]
+              p.product__text= product["text"]
+              button.btn.product__btn.js-scroll(type="button" href=content.product.btn.link)= content.product.btn.text
