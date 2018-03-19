@@ -380,7 +380,8 @@
         "type": "text",
         "name": "meter",
         "data": "num",
-        "id": "meter"
+        "id": "meter",
+        "value": 100
       },
       "label": {
         "text": "приблизительный метраж",
