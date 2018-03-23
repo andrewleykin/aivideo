@@ -8,7 +8,7 @@
   @media ({screen-lg})
     padding-top 25px
     padding-bottom 35px
-  @media ({screen-xl})
+  @media ({screen-md})
     display none
 
 .calculate__header
@@ -35,6 +35,8 @@
   width 100%
   max-width 180px
   text-align center
+  @media ({screen-xl})
+    max-width 125px
   &+&
     margin-left 10px
 
@@ -42,6 +44,8 @@
   margin-bottom 15px
   .icon
     size(55px)
+    @media ({screen-xl})
+      size(30px)
 
 .calculate__icon-name
   font-size 15px  
@@ -92,6 +96,8 @@
   cursor pointer
   @media ({screen-lg})
     padding 10px 20px
+  @media ({screen-xl})
+    font-size 15px
   &+&
     margin-top 5px
   &:hover
@@ -104,6 +110,8 @@
   margin-right 20px
   @media ({screen-lg})
     margin-right 17px
+  @media ({screen-xl})
+    margin-right 5px
 
 .calculate__item
   max-width 195px
@@ -111,6 +119,9 @@
   @media ({screen-lg})
     &+&
       margin-left 35px
+  @media ({screen-xl})
+    &+&
+      margin-left 15px
   &.disabled
     .calculate__text
       color text-disabled-color
@@ -118,8 +129,12 @@
 .calculate__item-btn
   margin-bottom 25px
   @media ({screen-lg})
-    width 154px
-    margin-bottom 20px
+    &.btn
+      width 154px
+      margin-bottom 20px
+  @media ({screen-xl})
+    &.btn
+      width 120px
 
 .calculate__text
   display block
@@ -129,6 +144,9 @@
     margin-top 18px
     @media ({screen-lg})
       margin-top 14px
+  @media ({screen-xl})
+    font-size 14px
+    line-height 16px
 
 .calculate__footer
   padding 0 54px
@@ -170,6 +188,8 @@
 
 .calculate__more
   margin-right 45px
+  @media ({screen-xl})
+    display none
 
 .calculate__more-title
   font-weight 600
@@ -184,6 +204,9 @@
   font-size 30px
   line-height 30px
   font-weight 600
+  @media ({screen-xl})
+    margin-left auto
+    margin-right 30px
 
 .calculate__total-num
   display block

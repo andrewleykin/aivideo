@@ -5,6 +5,10 @@
 		var direction = $(this).attr('href'),
 			reqArticle = $('section, footer, .product__item').filter(direction),
 			reqArticlePos = reqArticle.offset().top - 100;
+		
+		if($(window).width() < 768) {
+			reqArticlePos-= 50;
+		}
 		// 	menu = $('[data-remodal-id=mobile]').remodal();
 		// menu.close();
 

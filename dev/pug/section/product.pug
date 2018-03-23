@@ -24,4 +24,5 @@ section.product
             .product__info
               h2.product__name= product["name"]
               p.product__text= product["text"]
-              button.btn.product__btn.js-scroll(type="button" href=content.product.btn.link)= content.product.btn.text
+              button.btn.product__btn.js-scroll.hidden-md.hidden-sm(type="button" href=content.product.btn.link)= content.product.btn.text
+              button.btn.product__btn.hidden-lg.hidden-xl(type="button" data-remodal-target=content.general.remodal.order)= content.general.btn.text

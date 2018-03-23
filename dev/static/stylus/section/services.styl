@@ -25,12 +25,17 @@
   @media ({screen-xl})
     height 275px
     margin-bottom 35px
+  @media ({screen-md})
+    height auto
+    max-width 210px
 
 .services__icon
   padding-left 20px
   margin-bottom 23px
   .icon
     size(75px, 55px)
+    @media ({screen-md})
+      size(65px, 45px)
 
 .services__name
   font-size 24px
@@ -49,3 +54,7 @@
 .services__btn
   &.btn
     size(233px, 50px)
+  @media ({screen-md})
+    margin-top 20px
+    &.btn
+      size(100%, 40px)

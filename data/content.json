@@ -17,6 +17,10 @@
       "text": "Заказать",
       "link": "#order"
     },
+    "remodal": {
+      "order": "order",
+      "calculate": "calculate-order"
+    },
     "address": {
       "full": "123610, МОСКВА, ПРЕСНЕНСКАЯ НАБ. Д.12 ММДЦ «МОСКВА-СИТИ», БЦ «БАШНЯ ФЕДЕРАЦИИ»",
       "el": [

@@ -11,7 +11,7 @@
 
 // функция добавления в форму услуги
 (function(){
-	var btn = $('.services__btn, .calculate__btn'),
+	var btn = $('.services__btn, .calculate__btn, .product__btn'),
 		input = $('.order').find('input#services'),
 		services = [
 			'Cистемы видеонаблюдения',
@@ -21,6 +21,12 @@
 			'Система охраны периметра',
 			'Система платной парковки'
 		],
+		buildings = [
+			'Рестораны, кафе, столовые',
+			'Бизнес-центры офисы',
+			'Складские помещения',
+			'Загородные дома коттеджи, поселки'
+		]
 		calculateServices = [
 			'Cистемы видеонаблюдения',
 			'Охранно-пожарная сигнализация',
@@ -33,8 +39,13 @@
 		var thisBtn = $(this);
 		if (thisBtn.closest('.services__item')) {
 			var index = thisBtn.closest('.services__item').index();
-			input.attr('value',services[index]);
+			input.attr('value', services[index]);
 		} 		
+		if (thisBtn.closest('.product__item')) {
+			var index = thisBtn.closest('.product__item').index();
+			
+			input.attr('value', buildings[index]);
+		} 
 		if (thisBtn.closest('.calculate')) {
 			var calc = $('.calculate'),
 				orderCalc = $('.calculate-order'),
