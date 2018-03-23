@@ -47,7 +47,7 @@
         "id": "phone"
       },
       "label": {
-        "text": "+7(---) --- -- --",
+        "text": "+7 (---) --- -- --",
         "for": "phone"
       }
     }
@@ -118,7 +118,7 @@
         "type": "text",
         "name": "phone",
         "id": "phone2",
-        "label": "+7(---) --- -- --",
+        "label": "+7 (---) --- -- --",
         "sublabel": "Ваш телефон"
       },
       {
@@ -410,5 +410,81 @@
       ]
     },
     "total": "Итого:"
+  },
+  "order": {
+    "title": "ЗАКАЗАТЬ УСЛУГУ",
+    "form": [
+      {
+        "name": "services",
+        "id": "services",
+        "label": "",
+        "type": "hidden"
+      },
+      {
+        "name": "name",
+        "id": "name2",
+        "label": "Укажите ваше имя",
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "id": "email",
+        "label": "Укажите Email",
+        "type": "email"
+      },
+      {
+        "name": "phone",
+        "id": "phone3",
+        "label": "Введите номер телефона*",
+        "type": "phone"
+      }
+    ],
+    "calculateForm": [
+      {
+        "name": "building",
+        "id": "building",
+        "label": "",
+        "type": "hidden"
+      },
+      {
+        "name": "meter",
+        "id": "meter2",
+        "label": "",
+        "type": "hidden"
+      },
+      {
+        "name": "services",
+        "id": "services2",
+        "label": "",
+        "type": "hidden"
+      },
+      {
+        "name": "totalCost",
+        "id": "totalCost",
+        "label": "",
+        "type": "hidden"
+      },
+      {
+        "name": "name",
+        "id": "name3",
+        "label": "Укажите ваше имя",
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "id": "email2",
+        "label": "Укажите Email",
+        "type": "email"
+      },
+      {
+        "name": "phone",
+        "id": "phone4",
+        "label": "Введите номер телефона*",
+        "type": "phone"
+      }
+    ],
+    "formAction": "app/mail/sendorder.php",
+    "calculateFormAction": "app/mail/sendcalculate.php",
+    "btn": "ОТПРАВИТЬ ЗАПРОС"
   }
 }

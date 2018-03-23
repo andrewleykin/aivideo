@@ -2,6 +2,10 @@
   padding-top 65px
   background accent-color
   color white
+  @media ({screen-lg})
+    padding-top 50px
+  @media ({screen-xl})
+    padding-top 35px
 
 .services__wrap
   display flex
@@ -15,6 +19,12 @@
   display flex
   flex-direction column
   margin-bottom 80px
+  @media ({screen-lg})
+    max-width 300px
+    margin-bottom 50px
+  @media ({screen-xl})
+    height 275px
+    margin-bottom 35px
 
 .services__icon
   padding-left 20px
@@ -33,6 +43,8 @@
 .services__text
   margin-bottom auto
   max-width 290px
+  @media ({screen-xl})
+    font-size 15px
 
 .services__btn
   &.btn

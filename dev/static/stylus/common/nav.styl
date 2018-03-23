@@ -5,9 +5,13 @@
   padding 10px 15px
   &+&
     border-left 1px solid default-color
+  @media ({screen-xl})
+    &:last-child
+      display none
 
 .menu__link
   font-weight 600
+  font-size 15px
   @extend .trs
   &:hover
     color darken(default-color, 20%)

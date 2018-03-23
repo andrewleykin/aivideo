@@ -1,0 +1,10 @@
+.remodal.order(data-remodal-id="order")
+	button.remodal-close.order__close(data-remodal-action="close")
+	.order__wrap
+		h4.order__title= content.order.title
+		form.form.order__form(data-validation='' method="POST" action="#")
+			each form in content.order.form
+				.order__group.group
+					input.order__input.input(type= form["type"], name=form["name"], id=form["id"], data-name=form["name"])
+					label.order__label.label(for=form["id"])= form["label"]
+			button.order__btn.btn(type="submit")= content.order.btn

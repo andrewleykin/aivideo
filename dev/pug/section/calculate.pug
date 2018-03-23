@@ -36,4 +36,7 @@ section.calculate#calculate
         .calculate__total
           span.calculate__total-text= content.calculate.total
           span.calculate__total-num
-        button.btn.btn--red.calculate__btn(type="button")= content.general.btn.text
+        button.btn.btn--red.calculate__btn(type="button" data-remodal-target="calculate-order")= content.general.btn.text
+        // Форма заказа калькулятора
+        include ../modules/calculate-popup
+        // Конец формы заказа

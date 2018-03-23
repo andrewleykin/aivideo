@@ -51,7 +51,7 @@
                 <form class="top-banner__form form" data-validation>
                   <div class="top-banner__group group">
                     <input class="top-banner__input input" type="text" name="phone" id="phone">
-                    <label class="top-banner__label label" for="phone">+7(---) --- -- --</label><span class="top-banner__sublabel sublabel">Мы перезвоним в самое ближайшее время</span>
+                    <label class="top-banner__label label" for="phone">+7 (---) --- -- --</label><span class="top-banner__sublabel sublabel">Мы перезвоним в самое ближайшее время</span>
                   </div>
                   <button class="btn top-banner__btn" type="submit">Заказать</button>
                 </form>
@@ -72,7 +72,7 @@
                 </div>
                 <h3 class="services__name">Cистемы<span>видеонаблюдения</span></h3>
                 <p class="services__text">Используя наработанные связи и партнерские программы, наша компания готова предложить Вам лучшие цены на оборудование технической безопасности</p>
-                <button class="btn btn--white services__btn" type="button">Заказать</button>
+                <button class="btn btn--white services__btn" type="button" data-remodal-target="order">Заказать</button>
               </div>
               <div class="services__item">
                 <div class="services__icon">
@@ -82,7 +82,7 @@
                 </div>
                 <h3 class="services__name">Охранно-пожарная <span>сигнализация</span></h3>
                 <p class="services__text">Мы обладаем огромным опытом создания и поддержки систем пожарной безопасности и все необходимые средства для предоставления полного спектра услуг в данной области.</p>
-                <button class="btn btn--white services__btn" type="button">Заказать</button>
+                <button class="btn btn--white services__btn" type="button" data-remodal-target="order">Заказать</button>
               </div>
               <div class="services__item">
                 <div class="services__icon">
@@ -92,7 +92,7 @@
                 </div>
                 <h3 class="services__name">Системы контроля<span>и управления доступом</span></h3>
                 <p class="services__text">Мы создаём только надёжные передовые системы контроля и управления доступом - это подтверждает многолетняя практика и положительные отзывы.</p>
-                <button class="btn btn--white services__btn" type="button">Заказать</button>
+                <button class="btn btn--white services__btn" type="button" data-remodal-target="order">Заказать</button>
               </div>
               <div class="services__item">
                 <div class="services__icon">
@@ -102,7 +102,7 @@
                 </div>
                 <h3 class="services__name">Установка приточно<span>вытяжной вентиляции</span></h3>
                 <p class="services__text">Разработка технической документации и подготовка спецификации. После инсталляции системы безопасности, специалисты компании Аи-Видео обучат персонал навыкам работы с системой.</p>
-                <button class="btn btn--white services__btn" type="button">Заказать</button>
+                <button class="btn btn--white services__btn" type="button" data-remodal-target="order">Заказать</button>
               </div>
               <div class="services__item">
                 <div class="services__icon">
@@ -112,7 +112,7 @@
                 </div>
                 <h3 class="services__name">Система<span>охраны периметра</span></h3>
                 <p class="services__text">Разработка технической документации и подготовка спецификации. После инсталляции системы безопасности, специалисты компании Аи-Видео обучат персонал навыкам работы с системой.</p>
-                <button class="btn btn--white services__btn" type="button">Заказать</button>
+                <button class="btn btn--white services__btn" type="button" data-remodal-target="order">Заказать</button>
               </div>
               <div class="services__item">
                 <div class="services__icon">
@@ -122,7 +122,7 @@
                 </div>
                 <h3 class="services__name">Система<span>платной парковки</span></h3>
                 <p class="services__text">Разработка технической документации и подготовка спецификации. После инсталляции системы безопасности, специалисты компании Аи-Видео обучат персонал навыкам работы с системой.</p>
-                <button class="btn btn--white services__btn" type="button">Заказать</button>
+                <button class="btn btn--white services__btn" type="button" data-remodal-target="order">Заказать</button>
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@
                 <div class="top-form__list">
                   <div class="top-form__group group">
                     <input class="top-form__input input" type="text" id="phone2" name="phone">
-                    <label class="top-form__label label" for="phone2">+7(---) --- -- --</label><span class="top-form__sublabel sublabel">Ваш телефон</span>
+                    <label class="top-form__label label" for="phone2">+7 (---) --- -- --</label><span class="top-form__sublabel sublabel">Ваш телефон</span>
                   </div>
                   <div class="top-form__group group">
                     <input class="top-form__input input" type="text" id="name" name="name">
@@ -506,12 +506,78 @@
                   </ul>
                 </div>
                 <div class="calculate__total"><span class="calculate__total-text">Итого:</span><span class="calculate__total-num"></span></div>
-                <button class="btn btn--red calculate__btn" type="button">Заказать</button>
+                <button class="btn btn--red calculate__btn" type="button" data-remodal-target="calculate-order">Заказать</button>
+                <!-- Форма заказа калькулятора-->
+                <div class="remodal order calculate-order" data-remodal-id="calculate-order">
+                  <button class="remodal-close order__close" data-remodal-action="close"></button>
+                  <div class="order__wrap">
+                    <h4 class="order__title">ЗАКАЗАТЬ УСЛУГУ</h4>
+                    <form class="form order__form" data-validation="" method="POST" action="#">
+                      <div class="order__group group">
+                        <input class="order__input input" type="hidden" name="hidden" id="building" data-name="hidden">
+                        <label class="order__label label" for="building"></label>
+                      </div>
+                      <div class="order__group group">
+                        <input class="order__input input" type="hidden" name="hidden" id="meter2" data-name="hidden">
+                        <label class="order__label label" for="meter2"></label>
+                      </div>
+                      <div class="order__group group">
+                        <input class="order__input input" type="hidden" name="hidden" id="services2" data-name="hidden">
+                        <label class="order__label label" for="services2"></label>
+                      </div>
+                      <div class="order__group group">
+                        <input class="order__input input" type="hidden" name="hidden" id="totalCost" data-name="hidden">
+                        <label class="order__label label" for="totalCost"></label>
+                      </div>
+                      <div class="order__group group">
+                        <input class="order__input input" type="text" name="name" id="name3" data-name="name">
+                        <label class="order__label label" for="name3">Укажите ваше имя</label>
+                      </div>
+                      <div class="order__group group">
+                        <input class="order__input input" type="email" name="email" id="email2" data-name="email">
+                        <label class="order__label label" for="email2">Укажите Email</label>
+                      </div>
+                      <div class="order__group group">
+                        <input class="order__input input" type="phone" name="phone" id="phone4" data-name="phone">
+                        <label class="order__label label" for="phone4">Введите номер телефона*</label>
+                      </div>
+                      <button class="order__btn btn" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
+                    </form>
+                  </div>
+                </div>
+                <!-- Конец формы заказа-->
               </div>
             </div>
           </div>
         </section>
         <!-- Конец секции Calculate-->
+        <!-- Модальное окно - Форма заказа-->
+        <div class="remodal order" data-remodal-id="order">
+          <button class="remodal-close order__close" data-remodal-action="close"></button>
+          <div class="order__wrap">
+            <h4 class="order__title">ЗАКАЗАТЬ УСЛУГУ</h4>
+            <form class="form order__form" data-validation="" method="POST" action="#">
+              <div class="order__group group">
+                <input class="order__input input" type="hidden" name="hidden" id="services" data-name="hidden">
+                <label class="order__label label" for="services"></label>
+              </div>
+              <div class="order__group group">
+                <input class="order__input input" type="text" name="name" id="name2" data-name="name">
+                <label class="order__label label" for="name2">Укажите ваше имя</label>
+              </div>
+              <div class="order__group group">
+                <input class="order__input input" type="email" name="email" id="email" data-name="email">
+                <label class="order__label label" for="email">Укажите Email</label>
+              </div>
+              <div class="order__group group">
+                <input class="order__input input" type="phone" name="phone" id="phone3" data-name="phone">
+                <label class="order__label label" for="phone3">Введите номер телефона*</label>
+              </div>
+              <button class="order__btn btn" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
+            </form>
+          </div>
+        </div>
+        <!-- Коней модального окна-->
         <!-- Конец контента-->
         <!-- Подвал-->
         <footer class="footer">

@@ -1,14 +1,28 @@
 .advantage
   padding-top 45px
   padding-bottom 55px
+  @media ({screen-lg})
+    padding-top 35px
+    padding-bottom 45px
+  @media ({screen-xl})
+    padding 50px 0
 
 .advantage__wrap
   display flex
   justify-content space-between
+  @media ({screen-xl})
+    display block
+    text-align center
 
 .advantage__item
   max-width 315px
   width 100%
+  @media ({screen-lg})
+    max-width 300px
+  @media ({screen-xl})
+    margin 0 auto 30px
+    &:last-child
+      margin-bottom 0
 
 .advantage__icon
   margin-bottom 25px
@@ -22,3 +36,7 @@
   margin-bottom 20px
   span
     display block
+
+.advantage__text
+  @media ({screen-xl})
+    font-size 15px

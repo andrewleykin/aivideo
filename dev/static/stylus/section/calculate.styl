@@ -5,12 +5,19 @@
   color white
   .container
     max-width 1186px
+  @media ({screen-lg})
+    padding-top 25px
+    padding-bottom 35px
+  @media ({screen-xl})
+    display none
 
 .calculate__header
   display flex
   justify-content space-between
   padding 0 54px
   margin-bottom 15px
+  @media ({screen-lg})
+    padding 0
 
 .calculate__title
   font-size 30px
@@ -21,6 +28,8 @@
 .calculate__icons
   padding-top 15px
   display flex
+  @media ({screen-lg})
+    padding-top 0
 
 .calculate__icon
   width 100%
@@ -46,6 +55,9 @@
   position relative
   z-index 1
   margin-bottom 15px
+  @media ({screen-lg})
+    padding 0
+    padding-bottom 30px
   &:before,&:after
     content ""
     display block
@@ -56,6 +68,9 @@
     margin 0 35px
     background accent-color
     z-index -1
+    @media ({screen-lg})
+      width 100%
+      margin 0
   &:before
     top 13px
   &:after
@@ -65,6 +80,8 @@
   max-width 230px
   width 100%
   padding-top 45px
+  @media ({screen-lg})
+    padding-top 40px
 
 .calculate__menu-item
   display inline-block
@@ -73,6 +90,8 @@
   font-weight 600
   @extend .trs
   cursor pointer
+  @media ({screen-lg})
+    padding 10px 20px
   &+&
     margin-top 5px
   &:hover
@@ -83,16 +102,24 @@
 .calculate__list
   display flex
   margin-right 20px
+  @media ({screen-lg})
+    margin-right 17px
 
 .calculate__item
   max-width 195px
   width 100%
+  @media ({screen-lg})
+    &+&
+      margin-left 35px
   &.disabled
     .calculate__text
       color text-disabled-color
 
 .calculate__item-btn
   margin-bottom 25px
+  @media ({screen-lg})
+    width 154px
+    margin-bottom 20px
 
 .calculate__text
   display block
@@ -100,10 +127,14 @@
   line-height 15px
   &+&
     margin-top 18px
+    @media ({screen-lg})
+      margin-top 14px
 
 .calculate__footer
   padding 0 54px
   display flex
+  @media ({screen-lg})
+    padding 0
 
 .calculate__group
   max-width 175px
@@ -112,7 +143,7 @@
 
 .calculate__input
   padding-left 0
-  color red-color
+  font-weight 700 
   text-align center
 
 .calculate__sublabel
@@ -124,6 +155,8 @@
   display flex
   margin-right 90px
   margin-top -30px
+  @media ({screen-lg})
+    margin-right 65px
 
 .calculate__meter-text
   font-size 30px

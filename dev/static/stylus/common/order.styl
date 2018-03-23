@@ -1,0 +1,46 @@
+.order
+	padding 30px 40px
+	text-align left
+	max-width 500px
+
+.order__close
+	font-size 0
+	left 85%
+	top 25px
+	size(40px)
+	z-index 2
+	background url("../img/general/close.png") center no-repeat
+	background-size cover
+	&:before
+		display none
+	// @media ({screen-sm})
+	// 	size(25px)
+	// 	left 83%
+
+.order__title
+	font-size 48px
+	line-height 44px
+	font-weight 900
+	text-transform uppercase
+	margin-bottom 55px
+	color accent-color
+	// @media ({screen-sm})
+	// 	font-size 34px
+	// 	line-height 36px
+	// 	margin-bottom 20px
+	// 	max-width 220px
+
+.order__group
+	&+&
+		margin-top 30px
+
+.order__input
+	width 100%
+	color default-color
+
+.order__label
+	letter-spacing: 0
+	font-size 25px
+
+.order__btn
+	margin 45px auto 0

@@ -7,9 +7,15 @@
 .top-form__wrap
   display flex
   justify-content space-between
+  @media ({screen-lg})
+    display block
 
 .top-form__info
   max-width 205px
+  @media ({screen-lg})
+    max-width 100%
+    margin-bottom 40px
+    text-align center
 
 .top-form__title
   font-size: 20px
@@ -25,14 +31,27 @@
   width 100%
   max-width 730px
   padding-top 30px
+  @media ({screen-lg})
+    padding-top 0
+    max-width 100%
 
 .top-form__list
   display flex
   justify-content space-between
+  @media ({screen-lg})
+    justify-content center
 
 .top-form__group
   max-width 335px
+  @media ({screen-lg})
+    &+&
+      margin-left 30px
+
+.top-form__sublabel
+  margin-bottom 0
 
 .top-form__btn
   margin-top 45px
   margin-left auto
+  @media ({screen-lg})
+    margin 30px auto 0
