@@ -4,11 +4,11 @@ section.top-form
       .top-form__info
         h3.top-form__title= content.topForm.title
         span.top-form__subtitle= content.topForm.subtitle
-      form.top-form__form.form(data-validation)
+      form.top-form__form.form(data-validation method="POST" action="#")
         .top-form__list
           each form in content.topForm.form
             .top-form__group.group
-              input.top-form__input.input(type=form["type"], id=form["id"], name=form["name"])
+              input.top-form__input.input(type=form["type"], id=form["id"], name=form["name"], data-name=form["name"])
               label.top-form__label.label(for= form["id"])= form["label"]
               span.top-form__sublabel.sublabel= form["sublabel"]
         button.btn.top-form__btn(type="submit")= content.general.btn.text

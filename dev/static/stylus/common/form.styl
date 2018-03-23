@@ -1,12 +1,10 @@
-// .form
-// 	.invalid
-// 		input,
-// 		textarea
-// 			border-color red-color
-// 	.valid
-// 		input,
-// 		textarea
-// 			border-color blue-color
+.form
+  .invalid
+    .input
+      border-color red-color
+  .valid
+    .input
+      border-color accent-color
 
 .group
   position relative
@@ -21,6 +19,9 @@
   padding-left 15px
   max-width 100%
   width 100%
+  @extend .trs
+  @media ({screen-sm})
+    font-size 22px
   &:focus
     &+.label
       opacity 0
@@ -30,6 +31,9 @@
   left 15px
   top 7px
   position absolute
+  @media ({screen-sm})
+    font-size 22px
+    top 2px
 	&.hide
 		opacity 0
 

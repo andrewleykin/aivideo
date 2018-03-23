@@ -1,5 +1,8 @@
 nav.menu
+  .menu__burger
   ul.menu__list
     each menu in nav.topMenu
       li.menu__item
         a.menu__link(href=menu["link"])= menu["text"]
+    .menu__item.menu__item--phone
+      include phone

@@ -23,6 +23,7 @@
               </div>
               <div class="header__menu">
                 <nav class="menu">
+                  <div class="menu__burger"></div>
                   <ul class="menu__list">
                     <li class="menu__item"><a class="menu__link" href="#services">Услуги</a></li>
                     <li class="menu__item"><a class="menu__link" href="#restaurant">Ресторан</a></li>
@@ -30,6 +31,9 @@
                     <li class="menu__item"><a class="menu__link" href="#storage">Склад</a></li>
                     <li class="menu__item"><a class="menu__link" href="#home">Дом</a></li>
                     <li class="menu__item"><a class="menu__link" href="#calculate">Стоимость</a></li>
+                    <div class="menu__item menu__item--phone">
+                      <div class="phone"><a class="phone__link" href="tel:+74956642699">+7 (495) <span>664-26-99</span></a></div>
+                    </div>
                   </ul>
                 </nav>
               </div>
@@ -50,7 +54,7 @@
                 <p class="top-banner__title">Закажите звонок<span class="top-banner__subtitle">для бесплатной разработки проекта</span></p>
                 <form class="top-banner__form form" data-validation>
                   <div class="top-banner__group group">
-                    <input class="top-banner__input input" type="text" name="phone" id="phone">
+                    <input class="top-banner__input input" type="text" name="phone" id="phone" data-name="phone">
                     <label class="top-banner__label label" for="phone">+7 (---) --- -- --</label><span class="top-banner__sublabel sublabel">Мы перезвоним в самое ближайшее время</span>
                   </div>
                   <button class="btn top-banner__btn" type="submit">Заказать</button>
@@ -170,14 +174,14 @@
               <div class="top-form__info">
                 <h3 class="top-form__title">Оставьте заявку</h3><span class="top-form__subtitle">Бесплатный выезд оценщика</span>
               </div>
-              <form class="top-form__form form" data-validation>
+              <form class="top-form__form form" data-validation method="POST" action="#">
                 <div class="top-form__list">
                   <div class="top-form__group group">
-                    <input class="top-form__input input" type="text" id="phone2" name="phone">
+                    <input class="top-form__input input" type="text" id="phone2" name="phone" data-name="phone">
                     <label class="top-form__label label" for="phone2">+7 (---) --- -- --</label><span class="top-form__sublabel sublabel">Ваш телефон</span>
                   </div>
                   <div class="top-form__group group">
-                    <input class="top-form__input input" type="text" id="name" name="name">
+                    <input class="top-form__input input" type="text" id="name" name="name" data-name="name">
                     <label class="top-form__label label" for="name"></label><span class="top-form__sublabel sublabel">Ваше имя</span>
                   </div>
                 </div>

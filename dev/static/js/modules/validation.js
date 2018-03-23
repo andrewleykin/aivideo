@@ -21,9 +21,9 @@
 	function initializeValidate() {
 		$('[data-validation]').each(function () {
 		    var validator = $(this),
-		        inputs = validator.find('input:not(:checkbox), textarea'),
+		        inputs = validator.find('input:not(:checkbox, :hidden), textarea'),
 		        submit = validator.find('button[type=submit]'),
-		        stopSubmit = false;
+				stopSubmit = false;
 
 		    inputs.each(function() {
 		    	$(this).focus(function() {
@@ -78,7 +78,7 @@
 	        name_reg = /^[A-Za-zА-Яа-яЁё\-\s]+$/,
 			text_reg = /^[A-Za-zА-Яа-яёЁ\s\d]/,
 	        mail_reg = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i,
-	        phone_reg = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/,
+	        phone_reg = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){11,14}(\s*)?$/,
 	        num_reg = /^\d+$/;
 
 

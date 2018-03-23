@@ -10,6 +10,8 @@
   box-shadow 0 0 24px 0 rgba(0, 0, 0, .3)
   @media ({screen-md})
     min-height 120px
+  @media ({screen-sm})
+    min-height 80px
 
 .header__wrap
   display flex
@@ -17,8 +19,16 @@
   justify-content space-between
   @media ({screen-md})
     flex-wrap wrap
+  @media ({screen-sm})
+    position relative
 
 .header__menu
   @media ({screen-md})
     order 2
     margin 10px auto 0
+  @media ({screen-sm})
+    margin 0
+
+.header__phone
+  @media ({screen-sm})
+    display none

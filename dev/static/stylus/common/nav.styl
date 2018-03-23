@@ -1,13 +1,27 @@
 .menu__list
   display flex
+  @media ({screen-sm})
+    display none
+    position: absolute;
+    left: -11px;
+    top: 65px;
+    background: white;
+    width: calc(100% + 22px);
+    padding-bottom 10px
 
 .menu__item
   padding 10px 15px
   &+&
     border-left 1px solid default-color
   @media ({screen-md})
-    &:last-child
+    &:nth-last-child(2)
       display none
+
+.menu__item--phone
+  border-left none
+  display none
+  @media ({screen-sm})
+    display block
 
 .menu__link
   font-weight 600
@@ -15,3 +29,31 @@
   @extend .trs
   &:hover
     color darken(default-color, 20%)
+
+.menu__burger
+  size(20px, 3px)
+  background default-color
+  position relative
+  cursor pointer
+  @extend .trs
+  display none
+  @media ({screen-sm})
+    display block
+  &:before,&:after
+    content ''
+    display block
+    size(20px, 3px)
+    background default-color
+    position absolute
+    @extend .trs
+  &:before
+    top -6px
+  &:after
+    bottom -6px
+  &.active
+    transform rotate(45deg)
+    &:after
+      opacity 0
+    &:before
+      transform rotate(90deg)
+      top 0

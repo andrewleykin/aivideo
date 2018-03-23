@@ -9,8 +9,11 @@
 		if($(window).width() < 768) {
 			reqArticlePos-= 50;
 		}
-		// 	menu = $('[data-remodal-id=mobile]').remodal();
-		// menu.close();
+		if($(window).width() < 480) {
+			$('.menu__burger').removeClass('active');
+			$('.menu__list').slideUp(400);
+		}
+		
 
 		$('body, html').animate({scrollTop: reqArticlePos}, 500);
 	});

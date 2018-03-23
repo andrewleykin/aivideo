@@ -13,9 +13,9 @@
 	background-size cover
 	&:before
 		display none
-	// @media ({screen-sm})
-	// 	size(25px)
-	// 	left 83%
+	@media ({screen-sm})
+		size(25px)
+		left 83%
 
 .order__title
 	font-size 48px
@@ -24,11 +24,11 @@
 	text-transform uppercase
 	margin-bottom 55px
 	color accent-color
-	// @media ({screen-sm})
-	// 	font-size 34px
-	// 	line-height 36px
-	// 	margin-bottom 20px
-	// 	max-width 220px
+	@media ({screen-sm})
+		font-size 34px
+		line-height 36px
+		margin-bottom 20px
+		max-width 220px
 
 .order__group
 	&+&
@@ -41,6 +41,11 @@
 .order__label
 	letter-spacing: 0
 	font-size 25px
+	@media ({screen-sm})
+		font-size 15px
 
 .order__btn
 	margin 45px auto 0
+	@media ({screen-sm})
+		&.btn
+			width 100%

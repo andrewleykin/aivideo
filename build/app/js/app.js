@@ -9,6 +9,38 @@
 	popupOrderCalculate.close();
 })();
 
+// функция для вызова меню
+(function(){
+	var btn = $('.menu__burger'),
+			list = $('.menu__list');
+	
+	btn.click(function(){
+		if(!btn.hasClass('active')) {
+			changeMenu(true);
+		} else {
+			changeMenu(false);
+		}
+	});
+
+	$(document).click(function (e){ 
+		if (!list.is(e.target) && list.has(e.target).length === 0 && !btn.is(e.target)) { 
+					changeMenu(false);
+		}
+	});
+
+	function changeMenu (bool) {
+		if (bool) {
+			btn.addClass('active');
+			list.slideDown(400);
+		} else {
+			btn.removeClass('active');
+			list.slideUp(400,function(){
+				list.removeAttr('style');
+			});
+		}
+	}
+})();
+
 // функция добавления в форму услуги
 (function(){
 	var btn = $('.services__btn, .calculate__btn, .product__btn'),
@@ -107,8 +139,11 @@
 		if($(window).width() < 768) {
 			reqArticlePos-= 50;
 		}
-		// 	menu = $('[data-remodal-id=mobile]').remodal();
-		// menu.close();
+		if($(window).width() < 480) {
+			$('.menu__burger').removeClass('active');
+			$('.menu__list').slideUp(400);
+		}
+		
 
 		$('body, html').animate({scrollTop: reqArticlePos}, 500);
 	});
@@ -137,9 +172,9 @@
 	function initializeValidate() {
 		$('[data-validation]').each(function () {
 		    var validator = $(this),
-		        inputs = validator.find('input:not(:checkbox), textarea'),
+		        inputs = validator.find('input:not(:checkbox, :hidden), textarea'),
 		        submit = validator.find('button[type=submit]'),
-		        stopSubmit = false;
+				stopSubmit = false;
 
 		    inputs.each(function() {
 		    	$(this).focus(function() {
@@ -194,7 +229,7 @@
 	        name_reg = /^[A-Za-zА-Яа-яЁё\-\s]+$/,
 			text_reg = /^[A-Za-zА-Яа-яёЁ\s\d]/,
 	        mail_reg = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i,
-	        phone_reg = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/,
+	        phone_reg = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){11,14}(\s*)?$/,
 	        num_reg = /^\d+$/;
 
 

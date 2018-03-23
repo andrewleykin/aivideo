@@ -48,7 +48,8 @@
       "input": {
         "type": "text",
         "name": "phone",
-        "id": "phone"
+        "id": "phone",
+        "data": "phone"
       },
       "label": {
         "text": "+7 (---) --- -- --",

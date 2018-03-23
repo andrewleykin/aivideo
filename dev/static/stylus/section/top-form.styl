@@ -26,6 +26,8 @@
   font-size 30px
   line-height 30px
   font-weight 600
+  @media ({screen-sm})
+    font-size 24px
 
 .top-form__form
   width 100%
@@ -40,12 +42,18 @@
   justify-content space-between
   @media ({screen-lg})
     justify-content center
+  @media ({screen-sm})
+    display block
 
 .top-form__group
   max-width 335px
   @media ({screen-lg})
     &+&
       margin-left 30px
+  @media ({screen-sm})
+    &+&
+      margin-left 0
+      margin-top 20px
 
 .top-form__sublabel
   margin-bottom 0

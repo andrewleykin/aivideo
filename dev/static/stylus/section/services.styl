@@ -6,11 +6,16 @@
     padding-top 50px
   @media ({screen-xl})
     padding-top 35px
+  @media ({screen-sm})
+    padding-bottom 35px
 
 .services__wrap
   display flex
   flex-wrap wrap
   justify-content space-between
+  @media ({screen-sm})
+    display block
+    text-align center
 
 .services__item
   width 100%
@@ -28,14 +33,21 @@
   @media ({screen-md})
     height auto
     max-width 210px
+  @media ({screen-sm})
+    max-width 100%
+    &:last-child
+      margin-bottom 0
 
 .services__icon
   padding-left 20px
   margin-bottom 23px
+  @media ({screen-sm})
+    padding-left 0
   .icon
     size(75px, 55px)
     @media ({screen-md})
       size(65px, 45px)
+
 
 .services__name
   font-size 24px
