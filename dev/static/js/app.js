@@ -2,9 +2,15 @@
 
 (function(){
 	$('#phone, #phone2').inputmask({"mask": "+7 (999) 999 99 99", "placeholder": "-", showMaskOnHover: false});
-	var popupOrder = $('[data-remodal-id=order]').remodal();
+	var popupOrder = $('[data-remodal-id="order"]').remodal();
 	var popupOrderCalculate = $('[data-remodal-id=calculate-order]').remodal();
 	
+	// $('html').removeClass('remodal-is-locked');
+	// $('.remodal-overlay').removeClass('remodal-is-opened').addClass('remodal-is-closed').css('display', 'none');
+	// $('.remodal-wrapper').each(function(){
+	// 	$(this).removeClass('remodal-is-opened').addClass('remodal-is-closed').css('display', 'none');
+	// });
+
 	popupOrder.close();
 	popupOrderCalculate.close();
 })();
@@ -23,7 +29,7 @@
 	});
 
 	$(document).click(function (e){ 
-		if (!list.is(e.target) && list.has(e.target).length === 0 && !btn.is(e.target)) { 
+		if (!list.is(e.target) && list.has(e.target).length === 0 && !btn.is(e.target) && $(window).width() < 480) { 
 					changeMenu(false);
 		}
 	});

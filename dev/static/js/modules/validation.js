@@ -21,13 +21,14 @@
 	function initializeValidate() {
 		$('[data-validation]').each(function () {
 		    var validator = $(this),
-		        inputs = validator.find('input:not(:checkbox, :hidden), textarea'),
+		        inputs = validator.find('input:not(:checkbox, [type=hidden]), textarea'),
 		        submit = validator.find('button[type=submit]'),
 				stopSubmit = false;
-
+			console.log(inputs);
+			
 		    inputs.each(function() {
 		    	$(this).focus(function() {
-		    		$(this).siblings().addClass('hide')
+		    		$(this).siblings().addClass('hide');
 		    		$(this).parent().removeClass('invalid')
 		    	});
 		    	$(this).blur(function(){

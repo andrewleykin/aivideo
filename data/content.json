@@ -45,6 +45,7 @@
     "subtitle": "для бесплатной разработки проекта",
     "subform": "Мы перезвоним в самое ближайшее время",
     "form": {
+      "action": "app/mail/sendphone.php",
       "input": {
         "type": "text",
         "name": "phone",
@@ -133,7 +134,8 @@
         "label": "",
         "sublabel": "Ваше имя"
       }
-    ]
+    ],
+    "formAction": "app/mail/sendcontact.php"
   },
   "product": {
     "btn": {

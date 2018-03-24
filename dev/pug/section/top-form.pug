@@ -4,7 +4,7 @@ section.top-form
       .top-form__info
         h3.top-form__title= content.topForm.title
         span.top-form__subtitle= content.topForm.subtitle
-      form.top-form__form.form(data-validation method="POST" action="#")
+      form.top-form__form.form(data-validation method="POST" action=content.topForm.formAction)
         .top-form__list
           each form in content.topForm.form
             .top-form__group.group

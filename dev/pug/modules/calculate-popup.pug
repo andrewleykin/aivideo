@@ -2,7 +2,7 @@
 	button.remodal-close.order__close(data-remodal-action="close")
 	.order__wrap
 		h4.order__title= content.order.title
-		form.form.order__form(data-validation='' method="POST" action="#")
+		form.form.order__form(data-validation='' method="POST" action=content.order.calculateFormAction)
 			each form in content.order.calculateForm
 				.order__group.group
 					input.order__input.input(type= form["type"], name=form["name"], id=form["id"], data-name=form["name"])

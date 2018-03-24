@@ -52,7 +52,7 @@
               <p class="top-banner__text">Системы безопасности для ресторанов, офисов, складских помещений и загородных домов</p>
               <div class="top-banner__info">
                 <p class="top-banner__title">Закажите звонок<span class="top-banner__subtitle">для бесплатной разработки проекта</span></p>
-                <form class="top-banner__form form" data-validation>
+                <form class="top-banner__form form" data-validation method="POST" action="app/mail/sendphone.php">
                   <div class="top-banner__group group">
                     <input class="top-banner__input input" type="text" name="phone" id="phone" data-name="phone">
                     <label class="top-banner__label label" for="phone">+7 (---) --- -- --</label><span class="top-banner__sublabel sublabel">Мы перезвоним в самое ближайшее время</span>
@@ -174,7 +174,7 @@
               <div class="top-form__info">
                 <h3 class="top-form__title">Оставьте заявку</h3><span class="top-form__subtitle">Бесплатный выезд оценщика</span>
               </div>
-              <form class="top-form__form form" data-validation method="POST" action="#">
+              <form class="top-form__form form" data-validation method="POST" action="app/mail/sendcontact.php">
                 <div class="top-form__list">
                   <div class="top-form__group group">
                     <input class="top-form__input input" type="text" id="phone2" name="phone" data-name="phone">
@@ -520,7 +520,7 @@
                   <button class="remodal-close order__close" data-remodal-action="close"></button>
                   <div class="order__wrap">
                     <h4 class="order__title">ЗАКАЗАТЬ УСЛУГУ</h4>
-                    <form class="form order__form" data-validation="" method="POST" action="#">
+                    <form class="form order__form" data-validation="" method="POST" action="app/mail/sendcalculate.php">
                       <div class="order__group group">
                         <input class="order__input input" type="hidden" name="building" id="building" data-name="building">
                         <label class="order__label label" for="building"></label>
@@ -564,7 +564,7 @@
           <button class="remodal-close order__close" data-remodal-action="close"></button>
           <div class="order__wrap">
             <h4 class="order__title">ЗАКАЗАТЬ УСЛУГУ</h4>
-            <form class="form order__form" data-validation="" method="POST" action="#">
+            <form class="form order__form" data-validation="" method="POST" action="app/mail/sendorder.php">
               <div class="order__group group">
                 <input class="order__input input" type="hidden" name="services" id="services" data-name="services">
                 <label class="order__label label" for="services"></label>
