@@ -4,17 +4,10 @@
 	$('#phone, #phone2').inputmask({"mask": "+7 (999) 999 99 99", "placeholder": "-", showMaskOnHover: false});
 	var popupOrder = $('[data-remodal-id="order"]').remodal();
 	var popupOrderCalculate = $('[data-remodal-id=calculate-order]').remodal();
-	
-	// $('html').removeClass('remodal-is-locked');
-	// $('.remodal-overlay').removeClass('remodal-is-opened').addClass('remodal-is-closed').css('display', 'none');
-	// $('.remodal-wrapper').each(function(){
-	// 	$(this).removeClass('remodal-is-opened').addClass('remodal-is-closed').css('display', 'none');
-	// });
 
 	popupOrder.close();
 	popupOrderCalculate.close();
 })();
-
 // функция для вызова меню
 (function(){
 	var btn = $('.menu__burger'),
@@ -46,7 +39,6 @@
 		}
 	}
 })();
-
 // функция добавления в форму услуги
 (function(){
 	var btn = $('.services__btn, .calculate__btn, .product__btn'),

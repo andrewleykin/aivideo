@@ -1,3 +1,7 @@
+.menu
+  @media ({screen-md})
+    display inline-block
+
 .menu__list
   display flex
   @media ({screen-sm})
@@ -10,25 +14,36 @@
     padding-bottom 10px
 
 .menu__item
-  padding 10px 15px
   &+&
-    border-left 1px solid default-color
+    .menu__link
+      border-left 1px solid default-color
   @media ({screen-md})
     &:nth-last-child(2)
       display none
+  @media ({screen-sm})
+    &+&
+      .menu__link
+        border-left none
 
 .menu__item--phone
   border-left none
   display none
+  padding 10px 15px
   @media ({screen-sm})
     display block
 
 .menu__link
   font-weight 600
   font-size 15px
+  padding 10px 15px
+  display block
   @extend .trs
   &:hover
     color darken(default-color, 20%)
+  @media ({screen-sm})
+    &:hover
+      background default-color
+      color white
 
 .menu__burger
   size(20px, 3px)
